@@ -6,7 +6,7 @@ import { myTheme } from "../theme";
 import IconButton from "@mui/material/IconButton";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
-const LoginPage = () => {
+const signup = () => {
   const [checked, setChecked] = useState(true);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,27 +14,27 @@ const LoginPage = () => {
   };
 
   return (
-    <Stack>
+
       <Stack
-        spacing={2}
+        // spacing={2}
         sx={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          p: "48px",
-          width: "720px",
-          gap: "48px",
-          bgcolor: "white",
-          borderRadius: "32px",
-          alignItems: "center",
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            p: '27px 11px',
+            width: '600px',
+            gap: '22px',
+            bgcolor: 'white',
+            borderRadius: '32px',
+            alignItems: 'center',
         }}
       >
         <Image
           src="assets/icons/Gossip.png"
           alt="logo"
           width={127}
-          height={72}
+          height={70}
           unoptimized
         />
         <Stack spacing={1} justifyContent={"flex-start"} width={400}>
@@ -107,7 +107,7 @@ const LoginPage = () => {
                 fontWeight: 600,
               }}
             >
-              {" "}
+             
               Email
             </Typography>
             <Typography
@@ -348,7 +348,7 @@ const LoginPage = () => {
               lineHeight: "16px",
               fontWeight: 400,
               color: myTheme.color.primary[500],
-              // textTransform: 'none',
+              textTransform: 'none',
               borderRadius: "4px",
               gap: "8px",
             }}
@@ -357,8 +357,8 @@ const LoginPage = () => {
           </Button>
         </Stack>
       </Stack>
-    </Stack>
+ 
   );
 };
 
-export default LoginPage;
+export default signup;

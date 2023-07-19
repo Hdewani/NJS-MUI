@@ -15,15 +15,15 @@ const LoginPage = () => {
 
     return (
         <Stack
-            spacing={2}
+            // spacing={2}
             sx={{
                 position: 'absolute',
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                p: '48px',
-                width: '720px',
-                gap: '48px',
+                p: '27px 11px',
+                width: '600px',
+                gap: '38px',
                 bgcolor: 'white',
                 borderRadius: '32px',
                 alignItems: 'center',
